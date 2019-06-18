@@ -1,0 +1,100 @@
+<meta charset='utf-8' />
+<div style='width:840px;'>
+	<video preload="metadata" id="player" playsinline controls crossorigin="anonymous">
+		<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" />
+
+		<!-- Captions are optional -->
+		<track kind="captions" label="English captions" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" srclang="en" default />
+	</video>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.5.4/dist/plyr.css" />
+<script src="https://cdn.jsdelivr.net/npm/plyr@3.5.4/dist/plyr.min.js"></script>
+<script src="plyr-plugin-thumbnail.js"></script>
+cors video crossorigin="anonymous"
+<script>
+    const player = new Plyr('#player',{
+		//debug:true,
+		speed: {
+			selected: 1,
+			options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2],
+		},
+		controls: [
+			'play-large',
+			'restart',
+			'rewind',
+			'play',
+			'fast-forward',
+			'progress',
+			'current-time',
+			'mute',
+			'volume',
+			'captions',
+			'settings',
+			'pip',
+			'airplay',
+			'download',
+			'fullscreen',
+			'capture'
+		],
+		thumbnail:{
+			enabled:true,
+		    pic_num: 184,
+			width: 178,
+			height: 100,
+			col: 7,
+			row: 7,
+			offsetX:0,
+			offsetY:0,
+			urls: ['https://cdn.plyr.io/static/demo/thumbs/100p-00001.jpg',
+			'https://cdn.plyr.io/static/demo/thumbs/100p-00002.jpg',
+			'https://cdn.plyr.io/static/demo/thumbs/100p-00003.jpg',
+			'https://cdn.plyr.io/static/demo/thumbs/100p-00004.jpg']
+		},
+	    i18n: {
+			restart: '重启',
+			rewind: '后退 {seektime}s',
+			play: '播放',
+			pause: '暂停',
+			fastForward: '前进 {seektime}s',
+			seek: '进度',
+			seekLabel: '{currentTime} of {duration}',
+			played: '已播放',
+			buffered: '已缓冲',
+			currentTime: '当前时间',
+			duration: '时长',
+			volume: '音量',
+			mute: '静音',
+			unmute: '取消静音',
+			enableCaptions: '开启字幕',
+			disableCaptions: '禁用字幕',
+			download: '下载',
+			enterFullscreen: '全屏',
+			exitFullscreen: '退出全屏',
+			frameTitle: 'Player for {title}',
+			captions: '字幕',
+			settings: '设置',
+			menuBack: '返回上级菜单',
+			speed: '倍速',
+			normal: '正常',
+			quality: '清晰度',
+			loop: '循环',
+			start: '开始',
+			end: '结束',
+			all: '所有',
+			reset: '重置',
+			disabled: '禁用',
+			enabled: '启用',
+			advertisement: '广告',
+			qualityBadge: {
+				2160: '4K',
+				1440: 'HD',
+				1080: 'HD',
+				720: 'HD',
+				576: 'SD',
+				480: 'SD',
+			}
+		}
+	});
+	
+</script>
