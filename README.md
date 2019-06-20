@@ -42,4 +42,4 @@ thumbnail:{
 # Other Plugins
 1. [video capture](https://github.com/zengde/plyr-plugin-capture)
 2. [preview thumbnails](https://github.com/zengde/plyr-plugin-thumbnail)
-3. [generate thumbnail files](https://github.com/zengde/plyr-thumbnail-gerate)
+3. [generate thumbnail files](https://github.com/zengde/plyr-thumbnail-generate)
